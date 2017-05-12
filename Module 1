@@ -1,0 +1,47 @@
+Module 1.txt
+
+General commands
+
+  change directory = cd <directory name> (eg cd SchooolOfCode)
+  change to parent directory = cd ..
+
+  list files in directory = ls
+
+  touch StaticFile = creates a text file called StaticFile (needed to push code to cloud foundry)
+
+  delete a file = rm <filename> 
+
+  print working directory = pwd (bit like ls command)
+
+  create directory = mkdir <dirname>
+
+  up arrow -> scrolls through previously type commands
+
+  2 characters -> tab, completes the filename
+
+  copy command = cp ../styles.css styles.css (this will copy styles.css file from the parent directory into the current directory and name it styles.css)
+
+Cloud Foundry - connect to VPN first!
+
+  logging into cloud foundry (make sure you are logged into VPN first!)
+  cf login -a http://api.dev.cf.springer-sbm.com -u school_of_code@springernature.com -p D8370BE9-5C96-41AD-BB18-0D7C5750BB4B -s staging
+
+  push to cloud foundry soc-anita-css file = cf push soc-anita-css
+  push to cloud foundry soc-anita file = cf push soc-anita
+    (once complete, you can see the web page at the url specified on line urls: ....)
+    (note: each directory to be pushed to cloud foundry must have a file called StaticFile, to create type touch StaticFile in that directory from your command/terminal prompt)
+
+  List clound foundry apps = cf apps
+
+
+Heroku instructions for deploying to Heroku site
+  see - http://blog.teamtreehouse.com/deploy-static-site-heroku
+  remove a git repository = rm -rf .git/
+  push to heroku git repository = git push heroku master
+
+  creating an app in Heroku = heroku apps:create soc-anita
+  deleting an app in Heroku = heroku apps:delete soc-anita (where soc-anita is a directory name)
+  listing apps in Heroku = heroku apps
+
+Git
+  git status
